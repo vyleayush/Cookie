@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memories & Letters</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&family=Dancing+Script:wght@400;700&family=Special+Elite&family=Courier+Prime:wght@400;700&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Background Music Player -->
+    <div class="music-player">
+        <button id="musicToggle" class="music-btn">
+            <span class="play-icon">🎵</span>
+            <span class="pause-icon">⏸️</span>
+        </button>
+        <div class="music-text">Background Music</div>
+    </div>
+
+    <!-- Hidden Audio Element -->
+    <audio id="bgMusic" loop autoplay>
+        <source src="her-jake.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Hero Section -->
+    <section class="hero-vintage">
+        <div class="vintage-overlay"></div>
+        <div class="hero-content">
+            <h1 class="vintage-title">A Collection of Memories</h1>
+            <p class="vintage-subtitle">Letters, Photos & Moments in Time</p>
+            <div class="scroll-indicator">
+                <span>↓ Scroll ↓</span>
+            </div>
+        </div>
+        <div class="film-grain"></div>
+    </section>
+
+    <!-- Masonry Collage Section -->
+    <section class="masonry-section">
+        <div class="masonry-container">
+
+            <!-- Letter 1 - Newspaper Style -->
+            <div class="masonry-item letter-card newspaper-letter" data-aos="fade-up" style="--rotation: -3deg;">
+                <div class="newspaper-header">
+                    <div class="newspaper-date">January 2026</div>
+                    <div class="newspaper-title">PERSONAL GAZETTE</div>
+                </div>
+                <div class="letter-content">
+                    <h3>Dear You,</h3>
+                    <p>This is where your heartfelt letter goes. Every word written here carries meaning and warmth. Replace this text with your personal message that speaks from the heart.</p>
+                    <p class="signature">— With Love</p>
+                </div>
+                <div class="newspaper-footer">EST. 2026</div>
+            </div>
+
+            <!-- Photo 1 - Polaroid Style -->
+            <div class="masonry-item polaroid-photo" data-aos="zoom-in" style="--rotation: 5deg;">
+                <div class="polaroid-frame">
+                    <img src="1.jpg" alt="Memory 1">
+                    <div class="polaroid-caption">Beautiful Moment</div>
+                </div>
+            </div>
+
+            <!-- Letter 2 - Typewriter Style -->
+            <div class="masonry-item letter-card typewriter-letter" data-aos="fade-up" style="--rotation: 2deg;">
+                <div class="typewriter-content">
+                    <div class="typewriter-holes">
+                        <span class="hole"></span>
+                        <span class="hole"></span>
+                        <span class="hole"></span>
+                    </div>
+                    <h3>Sweet Memories</h3>
+                    <p>Remember all those times we laughed together? Every moment spent with you is a treasure. You bring so much joy and light into my life.</p>
+                    <p class="signature">— Always, Your Friend</p>
+                </div>
+            </div>
+
+            <!-- Photo 2 - Film Strip Style -->
+            <div class="masonry-item film-photo" data-aos="zoom-in" style="--rotation: -4deg;">
+                <div class="film-strip">
+                    <div class="film-holes top">
+                        <span></span><span></span><span></span><span></span>
+                    </div>
+                    <img src="2.jpg" alt="Memory 2">
+                    <div class="film-holes bottom">
+                        <span></span><span></span><span></span><span></span>
+                    </div>
+                    <div class="film-label">FRAME 03 - 35MM</div>
+                </div>
+            </div>
+
+            <!-- Letter 3 - Vintage Paper -->
+            <div class="masonry-item letter-card vintage-letter" data-aos="fade-up" style="--rotation: -2deg;">
+                <div class="vintage-stamp">SPECIAL</div>
+                <div class="letter-content">
+                    <h3>You Are Amazing</h3>
+                    <p>You are one of the most incredible people I know. Your kindness, strength, and beautiful spirit inspire me every day. Thank you for being exactly who you are.</p>
+                    <p class="signature">— Forever Grateful</p>
+                </div>
+                <div class="wax-seal">❤</div>
+            </div>
+
+            <!-- Photo 3 - Polaroid Style -->
+            <div class="masonry-item polaroid-photo" data-aos="zoom-in" style="--rotation: -6deg;">
+                <div class="polaroid-frame">
+                    <img src="3.jpg" alt="Memory 3">
+                    <div class="polaroid-caption">Golden Hour ☀</div>
+                </div>
+            </div>
+
+            <!-- Letter 4 - Newspaper -->
+            <div class="masonry-item letter-card newspaper-letter" data-aos="fade-up" style="--rotation: 4deg;">
+                <div class="newspaper-header">
+                    <div class="newspaper-date">Special Edition</div>
+                    <div class="newspaper-title">THE MEMORY TIMES</div>
+                </div>
+                <div class="letter-content">
+                    <h3>Grateful For You</h3>
+                    <p>I am so grateful that our paths crossed. You have made such a positive impact on my life. Your friendship is a gift that I cherish every single day.</p>
+                    <p class="signature">— With Appreciation</p>
+                </div>
+            </div>
+
+            <!-- Photo 4 - Vintage Photo -->
+            <div class="masonry-item polaroid-photo" data-aos="zoom-in" style="--rotation: 3deg;">
+                <div class="polaroid-frame">
+                    <img src="4.jpeg" alt="Memory 4">
+                    <div class="polaroid-caption">Precious Times ♡</div>
+                </div>
+            </div>
+
+            <!-- Letter 5 - Typewriter -->
+            <div class="masonry-item letter-card typewriter-letter" data-aos="fade-up" style="--rotation: -5deg;">
+                <div class="typewriter-content">
+                    <div class="typewriter-holes">
+                        <span class="hole"></span>
+                        <span class="hole"></span>
+                        <span class="hole"></span>
+                    </div>
+                    <h3>Shining Star</h3>
+                    <p>You shine so bright in this world. Your energy, your smile, your presence - everything about you is radiant. Never forget how special you are.</p>
+                    <p class="signature">— Keep Shining</p>
+                </div>
+            </div>
+
+    <!-- Video Section -->
+    <section class="video-vintage-section">
+        <h2 class="vintage-section-title">Moving Pictures</h2>
+        <div class="video-grid-vintage">
+            <div class="video-vintage-item" data-aos="fade-right">
+                <div class="film-reel-frame">
+                    <video controls poster="">
+                        <source src="edit.mp4" type="video/mp4">
+                    </video>
+                    <div class="film-label">REEL 01</div>
+                </div>
+            </div>
+            <div class="video-vintage-item" data-aos="fade-left">
+                <div class="film-reel-frame">
+                    <video controls poster="">
+                        <source src="edit2.mp4" type="video/mp4">
+                    </video>
+                    <div class="film-label">REEL 02</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-vintage">
+        <div class="container">
+            <p>❦ Made with Love & Memories ❦</p>
+            <p>© 2026 - A Timeless Collection</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
